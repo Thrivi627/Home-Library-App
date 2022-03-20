@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Library Inventory Home Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+<style>
+	.row1{
+		display : flex;
+		justify-content : center;
+	}
+	.spacer{
+		min-height : 20px;
+	}
+	.h2{
+		color : black;
+	}
+	a:hover{
+		color : #31C2C0;
+	}
+</style>
+</head>
+<body class="bg-dark bg-gradient">
+<div class="container text-center" >
+	<div class="card p-3 m-2 bg-info">
+	<div><h1>Home Library App</h1></div>
+	<div><h4>~ Protego ~ Protego Horribilis ~ Protego Totalum ~</h4></div>
+	</div>
+	<div class="spacer"></div>
+	<div class="row1">
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/categories}">List Book Categories</a>
+	</div>
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/categories/new}">Create Book Category</a>
+	</div>
+	</div>
+	<div class="row1">
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/books}">List Books</a>
+	</div>
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/books/new}">Create Book-entry</a>
+	</div>
+	</div>
+	<div class="row1">
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/publishers}">List Publishers</a>
+	</div>
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/publishers/new}">Add Publishers</a>
+	</div>
+	</div>
+	<div class="row1">
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/users}">List Users</a>
+	</div>
+	<div class="card p-2 m-2" style="width : 400px; background-color: #2D5F8C;">
+		<a class="h2" th:href="@{/users/new}">Add Users</a>
+	</div>
+	</div>
+</div>
+</body>
+</html>
